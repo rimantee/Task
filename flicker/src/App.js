@@ -24,7 +24,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div class="grid-container">
 {this.state.data &&this.state.data.photos && this.state.data.photos.photo.map(p=>this.renderPhoto(p))}
       </div>
       
