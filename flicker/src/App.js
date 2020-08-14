@@ -25,8 +25,14 @@ class App extends Component {
         <img src={this.generatePhotoUrl(photo)} alt={photo.id} />
         <div className="photoActions">
           <div className="text">
-            {photo.title}
-            {photo.ownername}
+            <div className="titleBox">
+              {photo.title}
+            </div>
+            <div className="line" />
+            <div className="ownerBox">
+              {photo.ownername}
+            </div>
+            <button className="button" type="button">Favourite</button>
           </div>
         </div>
       </div>

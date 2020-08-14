@@ -1,42 +1,79 @@
 img {
-  border-radius: 20px;
-  float: left;
   width: 400px;
   height: 300px;
-  padding: 15px;
   object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 0 #918d83;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
-  background-color: #c9d1cc;
+  background-color: #dedcd5;
   width: 1300px;
-  padding: 15px;
+  padding: 30px;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
 }
 
 .text{
   color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+  font-size: 20px;
+  text-align: center;
+  flex-wrap: wrap;
+  text-shadow: 1px 1px #000000;
 }
 
 .photoBox{
   position: relative;
+
 }
 
 .photoActions{
   position: absolute;
   top:0;
-  left:0;
-  bottom:0;
-  right:0;
-  display:none;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
   justify-content: center;
   flex-wrap: wrap;
   align-content: center;
+
 }
 
 .photoBox:hover .photoActions{
-    display:flex;
+    display: flex;
+    background:#706e68;
+    opacity: 0.7;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
 }
+
+.line {
+  flex-grow: 1;
+  border-bottom: 3px solid #ffffff;
+  margin: 5px
+}
+
+.titleBox{
+  font-weight: bold;
+}
+
+.ownerBox{
+  font-weight: 400;
+  font-style: italic;
+}
+
+.button{
+  position: relative;
+  top:50px;
+  border: solid 1px #ffffff;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: Transparent;
+}
+
